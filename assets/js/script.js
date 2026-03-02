@@ -12,6 +12,9 @@ window.addEventListener("scroll", () => {
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("open");
   navLinks.classList.toggle("open");
+  document.body.style.overflow = navLinks.classList.contains("open")
+    ? "hidden"
+    : "";
 });
 
 // Close mobile menu on link click
@@ -19,7 +22,21 @@ navLinks.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     navToggle.classList.remove("open");
     navLinks.classList.remove("open");
+    document.body.style.overflow = "";
   });
+});
+
+// Close mobile menu on outside tap
+document.addEventListener("click", (e) => {
+  if (
+    navLinks.classList.contains("open") &&
+    !navLinks.contains(e.target) &&
+    !navToggle.contains(e.target)
+  ) {
+    navToggle.classList.remove("open");
+    navLinks.classList.remove("open");
+    document.body.style.overflow = "";
+  }
 });
 
 /* ========================================
@@ -27,7 +44,6 @@ navLinks.querySelectorAll("a").forEach((link) => {
    ======================================== */
 const roles = [
   "Software Engineer",
-  "Frontend Developer",
   "React / React Native Dev",
   "JavaScript / TypeScript Dev",
 ];
@@ -70,6 +86,8 @@ setTimeout(type, 800);
    ======================================== */
 const revealEls = document.querySelectorAll(".reveal");
 
+const isMobile = window.matchMedia("(max-width: 700px)").matches;
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -79,7 +97,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.12 },
+  { threshold: isMobile ? 0.05 : 0.12 },
 );
 
 revealEls.forEach((el) => observer.observe(el));
