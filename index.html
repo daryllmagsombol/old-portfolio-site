@@ -1,258 +1,431 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Daryll Magsombol - Software Engineer</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daryll Magsombol — Software Engineer</title>
+    <meta
+      name="description"
+      content="Daryll Magsombol — Software Engineer specializing in JavaScript, TypeScript, React, and React Native."
+    />
     <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Header -->
-    <div id="header">
-      <div class="top">
-        <!-- Logo -->
-        <div id="logo">
-          <span class="image avatar48"><img src="images/me.jpg" alt="" /></span>
-          <h1 id="title">Daryll Joshua Magsombol</h1>
-          <p>Software Engineer</p>
-        </div>
-
-        <!-- Nav -->
-        <nav id="nav">
-          <ul>
-            <li>
-              <a href="#top" id="top-link" class="skel-layers-ignoreHref"
-                ><span class="icon fa-home">Intro</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="#portfolio"
-                id="portfolio-link"
-                class="skel-layers-ignoreHref"
-                ><span class="icon fa-th">Portfolio</span></a
-              >
-            </li>
-            <li>
-              <a href="#about" id="about-link" class="skel-layers-ignoreHref"
-                ><span class="icon fa-user">About Me</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                id="contact-link"
-                class="skel-layers-ignoreHref"
-                ><span class="icon fa-envelope">Contact</span></a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="bottom">
-        <!-- Social Icons -->
-        <ul class="icons">
-          <li>
-            <a href="https://www.twitter.com/darjosh012" class="icon fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
+    <!-- Nav -->
+    <header id="navbar">
+      <nav class="nav-inner">
+        <a href="#hero" class="nav-logo">daryll<span class="accent">.</span></a>
+        <ul class="nav-links">
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
           <li>
             <a
-              href="https://www.facebook.com/dj.daryll.xd"
-              class="icon fa-facebook"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/daryllmagsombol" class="icon fa-github"
-              ><span class="label">Github</span></a
-            >
-          </li>
-          <li>
-            <a href="mailto: darjosh012@gmail.com" class="icon fa-envelope"
-              ><span class="label">Email</span></a
+              href="https://github.com/daryllmagsombol"
+              target="_blank"
+              rel="noopener"
+              class="nav-github"
+              >GitHub ↗</a
             >
           </li>
         </ul>
-      </div>
-    </div>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
 
-    <!-- Main -->
-    <div id="main">
-      <!-- Intro -->
-      <section id="top" class="one dark cover">
-        <div class="container">
-          <header>
-            <h2 class="alt">Hi there! I'm Daryll!</h2>
-            <p>
-              A Software Engineer with solid proficiency in Web Development,
-              mainly in JavaScript, TypeScript, React, and React Native.
-            </p>
-          </header>
+    <main>
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero-content">
+          <p class="hero-greeting mono">Hi, I'm</p>
+          <h1 class="hero-name">
+            Daryll Magsombol<span class="accent">.</span>
+          </h1>
+          <h2 class="hero-role">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc">
+            Software engineer focused on building clean, user-facing products
+            with JavaScript, TypeScript, React, and React Native.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View my work</a>
+            <a href="mailto:darjosh012@gmail.com" class="btn btn-ghost"
+              >Get in touch</a
+            >
+          </div>
+        </div>
+        <div class="hero-scroll-hint">
+          <span class="mono">scroll</span>
+          <div class="scroll-line"></div>
         </div>
       </section>
 
-      <!-- Portfolio -->
-      <section id="portfolio" class="two">
+      <!-- Projects -->
+      <section id="projects" class="section">
         <div class="container">
-          <header>
-            <h2>Portfolio</h2>
-          </header>
+          <div class="section-header reveal">
+            <span class="section-label mono">01. work</span>
+            <h2 class="section-title">Projects</h2>
+          </div>
 
-          <!-- Changed: Use a single grid container -->
-          <div class="portfolio-grid">
-            <article class="item">
+          <div class="projects-grid">
+            <article class="project-card reveal">
               <a
                 href="https://daryllandhannah.com"
                 target="_blank"
-                class="image fit"
-                ><img src="images/1_wedding_site.png" alt=""
-              /></a>
-              <header>
-                <h3>Daryll and Hannah - Wedding</h3>
-              </header>
+                rel="noopener"
+                class="project-image-link"
+              >
+                <div class="project-image">
+                  <img
+                    src="images/1_wedding_site.png"
+                    alt="Daryll and Hannah Wedding Site"
+                  />
+                  <div class="project-overlay">
+                    <span>Visit ↗</span>
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3 class="project-title">Daryll &amp; Hannah</h3>
+                  <div class="project-links">
+                    <a
+                      href="https://daryllandhannah.com"
+                      target="_blank"
+                      rel="noopener"
+                      title="Live site"
+                      >↗</a
+                    >
+                  </div>
+                </div>
+                <p class="project-desc">
+                  A personal wedding website built to celebrate and share our
+                  special day — featuring our story, event details, and photo
+                  gallery.
+                </p>
+                <ul class="project-tags">
+                  <li>React</li>
+                  <li>CSS</li>
+                  <li>Netlify</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="item">
+            <article class="project-card reveal">
               <a
                 href="https://eventful-ph.netlify.app/"
                 target="_blank"
-                class="image fit"
-                ><img src="images/3_eventful_poc.png" alt=""
-              /></a>
-              <header>
-                <h3>Eventful (POC)</h3>
-              </header>
+                rel="noopener"
+                class="project-image-link"
+              >
+                <div class="project-image">
+                  <img src="images/3_eventful_poc.png" alt="Eventful POC" />
+                  <div class="project-overlay">
+                    <span>Visit ↗</span>
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3 class="project-title">
+                    Eventful
+                    <span class="accent mono" style="font-size: 0.75rem"
+                      >POC</span
+                    >
+                  </h3>
+                  <div class="project-links">
+                    <a
+                      href="https://eventful-ph.netlify.app/"
+                      target="_blank"
+                      rel="noopener"
+                      title="Live site"
+                      >↗</a
+                    >
+                  </div>
+                </div>
+                <p class="project-desc">
+                  A proof-of-concept event discovery platform for the
+                  Philippines — browse and explore local events in a clean,
+                  modern interface.
+                </p>
+                <ul class="project-tags">
+                  <li>React</li>
+                  <li>JavaScript</li>
+                  <li>Netlify</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="item">
+            <article class="project-card reveal">
               <a
                 href="https://smartpowersolutions.netlify.app"
                 target="_blank"
-                class="image fit"
-                ><img src="images/4_smartpower_prototype.png" alt=""
-              /></a>
-              <header>
-                <h3>SmartPower Monitor (Prototype)</h3>
-              </header>
+                rel="noopener"
+                class="project-image-link"
+              >
+                <div class="project-image">
+                  <img
+                    src="images/4_smartpower_prototype.png"
+                    alt="SmartPower Monitor"
+                  />
+                  <div class="project-overlay">
+                    <span>Visit ↗</span>
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3 class="project-title">SmartPower Monitor</h3>
+                  <div class="project-links">
+                    <a
+                      href="https://smartpowersolutions.netlify.app"
+                      target="_blank"
+                      rel="noopener"
+                      title="Live site"
+                      >↗</a
+                    >
+                  </div>
+                </div>
+                <p class="project-desc">
+                  A prototype energy monitoring dashboard that visualizes power
+                  consumption data in real time — built to demonstrate
+                  IoT-connected UI.
+                </p>
+                <ul class="project-tags">
+                  <li>React</li>
+                  <li>Charts</li>
+                  <li>Netlify</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="item">
+            <article class="project-card reveal">
               <a
                 href="https://play.google.com/store/apps/details?id=com.transformlit.app"
                 target="_blank"
-                class="image fit"
-                ><img
-                  src="images/2_transformlit_app.jpg"
-                  alt=""
-                  style="width: 60%; height: 60%; margin: auto"
-              /></a>
-              <header>
-                <h3>Transformlit App</h3>
-              </header>
+                rel="noopener"
+                class="project-image-link"
+              >
+                <div class="project-image project-image--contain">
+                  <img
+                    src="images/2_transformlit_app.jpg"
+                    alt="Transformlit App"
+                  />
+                  <div class="project-overlay">
+                    <span>Play Store ↗</span>
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3 class="project-title">Transformlit App</h3>
+                  <div class="project-links">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.transformlit.app"
+                      target="_blank"
+                      rel="noopener"
+                      title="Play Store"
+                      >↗</a
+                    >
+                  </div>
+                </div>
+                <p class="project-desc">
+                  A mobile app published on Google Play Store — helping users
+                  transform their reading habit through curated Christian
+                  literature.
+                </p>
+                <ul class="project-tags">
+                  <li>React Native</li>
+                  <li>TypeScript</li>
+                  <li>Android</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="item">
-              <a href="" class="image fit"
-                ><img src="images/port6.JPG" alt=""
-              /></a>
-              <header>
-                <h3>Anderson Pay (ASP MVC5)</h3>
-              </header>
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="images/port6.JPG" alt="Anderson Pay" />
+                <div class="project-overlay"><span>No live link</span></div>
+              </div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3 class="project-title">Anderson Pay</h3>
+                </div>
+                <p class="project-desc">
+                  An internal payment management system built with ASP.NET MVC5
+                  — handling transaction records and user account management.
+                </p>
+                <ul class="project-tags">
+                  <li>ASP.NET MVC5</li>
+                  <li>C#</li>
+                  <li>SQL Server</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="item">
-              <a href="http://joshuamagsombolblog.epizy.com/" class="image fit"
-                ><img src="images/port7.JPG" alt=""
-              /></a>
-              <header>
-                <h3>Mi Blogsite (CodeIgniter PHP)</h3>
-              </header>
+            <article class="project-card reveal">
+              <a
+                href="http://joshuamagsombolblog.epizy.com/"
+                target="_blank"
+                rel="noopener"
+                class="project-image-link"
+              >
+                <div class="project-image">
+                  <img src="images/port7.JPG" alt="Mi Blogsite" />
+                  <div class="project-overlay">
+                    <span>Visit ↗</span>
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3 class="project-title">Mi Blogsite</h3>
+                  <div class="project-links">
+                    <a
+                      href="http://joshuamagsombolblog.epizy.com/"
+                      target="_blank"
+                      rel="noopener"
+                      title="Live site"
+                      >↗</a
+                    >
+                  </div>
+                </div>
+                <p class="project-desc">
+                  A personal blog CMS built with CodeIgniter PHP — my first
+                  full-stack web application with user auth, post creation, and
+                  comments.
+                </p>
+                <ul class="project-tags">
+                  <li>CodeIgniter</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- About Me -->
-      <section id="about" class="three">
+      <!-- About -->
+      <section id="about" class="section section--alt">
         <div class="container">
-          <header>
-            <h2>About Me</h2>
-          </header>
+          <div class="section-header reveal">
+            <span class="section-label mono">02. me</span>
+            <h2 class="section-title">About</h2>
+          </div>
 
-          <a href="#" class="image featured"
-            ><img src="images/lappy.JPG" alt=""
-          /></a>
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p>
+                Hey! I'm Daryll, a software engineer based in the Philippines. I
+                graduated with a BS in Computer Science from
+                <strong>STI College Ortigas-Cainta</strong> and have been
+                building web and mobile products ever since.
+              </p>
+              <p>
+                My dad introduced me to computers early on, and I've been
+                fascinated ever since. I love the craft of turning ideas into
+                real, usable software — and I take particular pride in writing
+                clean, readable code.
+              </p>
+              <p>
+                Outside of work, I enjoy building PCs, exploring new tech, and
+                spending time with my family.
+              </p>
+              <a
+                href="mailto:darjosh012@gmail.com"
+                class="btn btn-primary"
+                style="margin-top: 1.5rem; display: inline-block"
+                >Say hello →</a
+              >
+            </div>
 
-          <p>
-            I studied at STI College Ortigas-Cainta, took Bachelor of Science in
-            Computer Science. Loves technology so I easily hooked up in
-            programming. Most things I like is building a PC. It feels good when
-            you build something especially PC parts.
-          </p>
-          <p>
-            When I was young, my father teached me all about computer. And
-            that's drives me now to pursue my passion. Once said my professor
-            that we, the programmers, are the wizard of the future, turning
-            caffeine into software. Like magic! Now it's my turn to create magic
-            and show it to the whole world!
-          </p>
+            <div class="about-skills reveal">
+              <h3 class="skills-title mono">tech i work with</h3>
+              <div class="skills-grid">
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">TypeScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">React Native</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">HTML &amp; CSS</div>
+                <div class="skill-item">C# / .NET</div>
+                <div class="skill-item">PHP</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">REST APIs</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="four">
+      <section id="contact" class="section">
         <div class="container">
-          <header>
-            <h2>Contact</h2>
-          </header>
+          <div class="section-header reveal">
+            <span class="section-label mono">03. connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+          </div>
 
-          <p>
-            Need to contact me? In side bar, there are the links to my social
-            media accounts. Or just drop a message here in this form.
-          </p>
-
-          <form method="post" action="#">
-            <div class="row">
-              <div class="6u 12u$(mobile)">
-                <input type="text" name="name" placeholder="Name" />
-              </div>
-              <div class="6u$ 12u$(mobile)">
-                <input type="text" name="email" placeholder="Email" />
-              </div>
-              <div class="12u$">
-                <textarea name="message" placeholder="Message"></textarea>
-              </div>
-              <div class="12u$">
-                <input type="submit" value="Send Message" />
-              </div>
-            </div>
-          </form>
+          <div class="contact-content reveal">
+            <p class="contact-desc">
+              I'm currently open to new opportunities. Whether you have a
+              project in mind, a question, or just want to say hi — my inbox is
+              always open.
+            </p>
+            <a
+              href="mailto:darjosh012@gmail.com"
+              class="btn btn-primary btn--large"
+              >Send me an email</a
+            >
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://github.com/daryllmagsombol"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.twitter.com/darjosh012"
+                  target="_blank"
+                  rel="noopener"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/dj.daryll.xd"
+                  target="_blank"
+                  rel="noopener"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-    </div>
+    </main>
 
     <!-- Footer -->
-    <div id="footer">
-      <!-- Copyright -->
-      <ul class="copyright">
-        <li>&copy; Old Profolio Site - Daryll Joshua Magsombol</li>
-      </ul>
-    </div>
+    <footer id="footer">
+      <p class="mono">
+        Designed &amp; built by
+        <span class="accent">Daryll Magsombol</span> — 2026
+      </p>
+    </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollzer.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <!--[if lte IE 8
-      ]><script src="assets/js/ie/respond.min.js"></script
-    ><![endif]-->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/Xo5R.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
