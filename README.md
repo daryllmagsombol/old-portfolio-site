@@ -1,6 +1,6 @@
 # Daryll Joshua Magsombol — Portfolio (2018)
 
-My personal portfolio website from back in 2018. A static single-page site showcasing my early projects and work as a web developer.
+My personal portfolio website from back in 2018. A static single-page site showcasing my early projects and before I got into work in Web Development field.
 
 ## Tech Stack
 
@@ -14,24 +14,24 @@ Built on the [**Prologue**](https://html5up.net/prologue) template by [HTML5 UP]
 
 ## Sections
 
-| Section | Description |
-|---------|-------------|
-| **Intro** | Hero with greeting and tagline |
+| Section       | Description                                                                          |
+| ------------- | ------------------------------------------------------------------------------------ |
+| **Intro**     | Hero with greeting and tagline                                                       |
 | **Portfolio** | Project gallery — apps, websites, and prototypes I built in college and early career |
-| **About Me** | Brief background about my studies at STI College Ortigas-Cainta and what drives me |
-| **Contact** | Contact form and social links (Twitter, Facebook, GitHub, Email) |
+| **About Me**  | Brief background about my studies at STI College Ortigas-Cainta and what drives me   |
+| **Contact**   | Contact form and social links (Twitter, Facebook, GitHub, Email)                     |
 
 ## Featured Projects
 
-| Project | Tech |
-|---------|------|
-| Location Simulator for Business | Unity3D |
-| Flat Design Website | HTML/CSS |
-| Pixie Studio | Web |
-| E-commerce PC Shop | Web |
-| Anderson Pay | ASP.NET MVC5 |
-| Mi Blogsite | CodeIgniter (PHP) |
-| U-Help Appsite | Web |
+| Project                         | Tech              |
+| ------------------------------- | ----------------- |
+| Location Simulator for Business | Unity3D           |
+| Flat Design Website             | HTML/CSS          |
+| Pixie Studio                    | Web               |
+| E-commerce PC Shop              | Web               |
+| Anderson Pay                    | ASP.NET MVC5      |
+| Mi Blogsite                     | CodeIgniter (PHP) |
+| U-Help Appsite                  | Web               |
 
 ## Getting Started
 
